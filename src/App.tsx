@@ -3,14 +3,15 @@ import Home from "./component/Home/home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SideBar from "./Layout/side-bar";
 import HomePage from "./Pages/Home/homepage";
+import Header from "./Layout/header";
+import Defaultlayout from "./Layout/Default-Layout/Defaultlayout";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
-        <SideBar />
         <Routes>
-          <Route>
+          <Route element={<Defaultlayout/>}>
             <Route path="/" element={<HomePage />} />
           </Route>
         </Routes>
