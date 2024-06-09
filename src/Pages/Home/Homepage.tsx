@@ -1,9 +1,10 @@
 import React from 'react'
+import AllMovies from '../../component/Movies/All-Movies'
 
 const HomePage = () => {
   return (
-    <div className='text-white'>
-      Home
+    <div>
+      <AllMovies/>
     </div>
   )
 }

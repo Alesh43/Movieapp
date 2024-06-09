@@ -8,7 +8,7 @@ const Defaultlayout = () => {
     <div className=''>
         <Header/>
       <SideBar/>
-      <div className='ml-64 w-full'>
+      <div className='ml-64 '>
         <Outlet/>
       </div>
     </div>
